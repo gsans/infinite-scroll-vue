@@ -1,0 +1,16 @@
+type Contact
+  @model
+  @key(
+    fields: ["book", "fullName"]
+    name: "ByFullName"
+    queryField: "listContactsByFullName"
+  ) {
+    book: String!
+    id: ID!
+    fullName: String!
+    name: String!
+    surname: String!
+    email: String
+    phone: String
+    imageUrl: String
+}
